@@ -2,30 +2,128 @@
 <html>
 <head>
   <style>
+    header{
+      font-size: 50px;
+    }
     ul {
       list-style-type: none;
+      padding-left: 20px;
     }
-    ul li {
+    ul li{
+      margin: 5px;
+      width: 45%;
+    }
+    }
+    div {
+      display: block;
       margin: 5px;
     }
-    </style>
+    select.listedtask{
+      float: right;
+      margin-right: 20px;
+    }
+    button{
+      float: right;
+    }
+    .bottom {
+      float: none;
+      margin: 5px;
+      font-size: 1.2em;
+    }
+    input.input{
+      width: 45%;
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 
 <body>
+  <header>Today's To-Do List</header>
 
-  <header>
-    To-Do List
-  </header>
+  <h2>Tasks Remaining: 5</h2>
 
-  <ul>
-    <li><input type = "checkbox"> Stuff1 <button>Remove</button></li>
-    <li><input type = "checkbox"> Stuff2 <button>Remove</button></li>
-    <li><input type = "checkbox"> Stuff3 <button>Remove</button></li>
+  <h2> Priority 1</h2>
+  <ul id="priority1">
+
   </ul>
 
-  <input type = "text" />
+  <h2> Priority 2</h2>
 
-  <button>Add Task</button>
+  <ul id="priority2">
+  </ul>
+
+  <h2> Priority 3</h2>
+  <ul id="priority3">
+
+  </ul>
+
+  <h2> Priority 4</h2>
+  <ul id="priority4">
+
+  </ul>
+
+  <h2> Priority 5</h2>
+  <ul id="priority5">
+  </ul>
+
+  <div>
+    <input type = "text" class="input"/>
+    <select class='priority'>
+      <option value = '1'>1</option>
+      <option value = '2'>2</option>
+      <option value = '3'>3</option>
+      <option value = '4'>4</option>
+      <option value = '5'>5</option>
+    </select>
+  </div>
+
+  <div>
+    <input type = "text" class="input"/>
+    <select class='priority'>
+      <option value = '1'>1</option>
+      <option value = '2'>2</option>
+      <option value = '3'>3</option>
+      <option value = '4'>4</option>
+      <option value = '5'>5</option>
+    </select>
+  </div>
+
+  <div>
+    <input type = "text" class="input"/>
+    <select class='priority'>
+      <option value = '1'>1</option>
+      <option value = '2'>2</option>
+      <option value = '3'>3</option>
+      <option value = '4'>4</option>
+      <option value = '5'>5</option>
+    </select>
+  </div>
+
+  <div>
+    <input type = "text" class="input"/>
+    <select class='priority'>
+      <option value = '1'>1</option>
+      <option value = '2'>2</option>
+      <option value = '3'>3</option>
+      <option value = '4'>4</option>
+      <option value = '5'>5</option>
+    </select>
+  </div>
+
+  <div>
+    <input type = "text" class="input"/>
+    <select class='priority'>
+      <option value = '1'>1</option>
+      <option value = '2'>2</option>
+      <option value = '3'>3</option>
+      <option value = '4'>4</option>
+      <option value = '5'>5</option>
+    </select>
+  </div>
+
+  <button class="bottom" id="update">Update</button>
+
+  <script src = "app.js"></script>
 
 </body>
 </html>
